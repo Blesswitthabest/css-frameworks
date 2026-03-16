@@ -10,25 +10,42 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
+    padding: 22px 50px;
 }
 
 nav ul {
     display: flex;
     list-style: none;
-    gap: 20px;
+    gap: 18px;
     margin: 0;
     padding: 0;
 }
 
-nav a {
-    color: #f5f5f5;
+
+nav ul a {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #00209F;
+    padding: 8px 18px;
+    border-radius: 6px;
     text-decoration: none;
     font-weight: bold;
+    transition: 0.2s;
 }
 
-nav a:hover {
-    color: #F1B517;
+nav ul a:hover {
+    background-color: #00209F;
+    color: white;
+}
+
+
+nav > a {
+    background-color: #00209F;
+    padding: 14px 28px;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 
@@ -38,14 +55,14 @@ header {
 }
 
 header h1 {
-    font-size: 3.2rem;
-    color: #ffffff;
+    font-size: 3.3rem;
+    color: white;
     margin-bottom: 15px;
 }
 
 header p {
     max-width: 700px;
-    margin: 0 auto 20px auto;
+    margin: 0 auto 22px auto;
     color: #e6e6e6;
 }
 
@@ -53,25 +70,37 @@ header p {
 header a {
     display: inline-block;
     margin: 10px 8px;
-    padding: 12px 20px;
-    border: 2px solid #00209F;
+    padding: 13px 22px;
     border-radius: 6px;
-    color: #ffffff;
-    background-color: #00209F;
     text-decoration: none;
     font-weight: bold;
+    transition: 0.2s;
 }
 
-header a:hover {
+
+header a:first-of-type {
+    background-color: #00209F;
+    color: white;
+}
+
+header a:first-of-type:hover {
+    background-color: #001675;
+}
+
+
+header a:last-of-type {
     background-color: #D21034;
-    border-color: #D21034;
-    color: #ffffff;
+    color: white;
+}
+
+header a:last-of-type:hover {
+    background-color: #a30c29;
 }
 
 
 main {
     max-width: 1000px;
-    margin: 0 auto;
+    margin: auto;
     padding: 20px;
 }
 
@@ -81,32 +110,31 @@ section {
 }
 
 section header {
-    padding: 0;
     margin: 0 0 18px 0;
 }
 
 
 section h2 {
-    color: #ffffff;
     text-align: center;
     font-size: 3rem;
-    margin: 0 0 10px 0;
+    color: white;
+    margin-bottom: 10px;
 }
+
 
 section h2::after {
     content: "";
     display: block;
     width: 80px;
     height: 4px;
-    margin: 10px auto 0;
     background-color: #D21034;
-    border-radius: 2px;
+    margin: 10px auto 0 auto;
+    border-radius: 3px;
 }
 
 section p {
     max-width: 850px;
-    margin: 0 auto;
-    color: #e6e6e6;
+    margin: auto;
 }
 
 
@@ -115,87 +143,70 @@ section p {
     gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
-    text-align: left;
 }
 
 #services aside {
     background-color: #3a3d42;
-    border: 1px solid #4b4f55;
+    border: 1px solid #555;
     border-radius: 8px;
     width: 280px;
-    padding: 20px;
-    box-shadow: none;
+    padding: 22px;
 }
+
 
 #services aside h3 {
     color: #F1B517;
     margin-top: 0;
-    margin-bottom: 10px;
-    font-size: 1.4rem;
-}
-
-#services aside p {
-    margin: 0;
-    color: #e6e6e6;
 }
 
 
 form {
     background-color: #3a3d42;
-    border: 1px solid #4b4f55;
+    border: 1px solid #555;
     border-radius: 8px;
     padding: 24px;
-    max-width: 500px;
-    margin: 0 auto;
+    max-width: 480px;
+    margin: auto;
 }
 
 label {
     display: block;
     margin-bottom: 6px;
     font-weight: bold;
-    color: #ffffff;
 }
 
-input,
-textarea {
+input {
     width: 100%;
     padding: 12px;
-    margin-bottom: 18px;
-    border: 1px solid #777;
+    margin-bottom: 16px;
     border-radius: 6px;
+    border: 1px solid #888;
     box-sizing: border-box;
-    font-size: 1rem;
-    background-color: #ffffff;
-    color: #111111;
 }
 
-input:focus,
-textarea:focus {
+input:focus {
     outline: 2px solid #00209F;
-    border-color: #00209F;
 }
 
 
 button {
     background-color: #00209F;
-    color: #ffffff;
+    color: white;
     border: none;
     padding: 12px 22px;
     border-radius: 6px;
-    font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #D21034;
+    background-color: #001675;
 }
 
 
 footer {
     text-align: center;
     padding: 20px;
-    background: #1f2124;
-    color: #ffffff;
     margin-top: 30px;
+    background-color: #1f2124;
 }
