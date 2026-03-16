@@ -1,125 +1,130 @@
 body {
+    margin: 0;
     background-color: #2f3136;
     color: #f5f5f5;
-    margin: 0;
     line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+
+
+header {
+    background: #ffffff;
+    color: #222;
+    text-align: center;
+    padding: 60px 20px 40px 20px;
+}
+
 
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 22px 50px;
+    padding: 0 60px 30px 60px;
 }
 
 nav ul {
     display: flex;
-    list-style: none;
     gap: 18px;
+    list-style: none;
     margin: 0;
     padding: 0;
 }
 
 
-nav ul a {
-    background-color: transparent;
-    color: #ffffff;
-    border: 2px solid #00209F;
-    padding: 8px 18px;
-    border-radius: 6px;
+
+nav > a {
+    background: #00209F;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
-    transition: 0.2s;
+}
+
+
+
+nav ul a {
+    text-decoration: none;
+    font-weight: bold;
+    background: #D21034;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 6px;
 }
 
 nav ul a:hover {
-    background-color: #00209F;
-    color: white;
+    background: #00209F;
 }
 
 
-nav > a {
-    background-color: #00209F;
-    padding: 14px 28px;
-    border-radius: 8px;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-
-header {
-    text-align: center;
-    padding: 60px 20px 30px 20px;
-}
 
 header h1 {
-    font-size: 3.3rem;
-    color: white;
+    font-size: 3.4rem;
     margin-bottom: 15px;
 }
 
 header p {
-    max-width: 700px;
-    margin: 0 auto 22px auto;
-    color: #e6e6e6;
+    max-width: 650px;
+    margin: 0 auto 25px auto;
+    color: #444;
 }
+
 
 
 header a {
     display: inline-block;
-    margin: 10px 8px;
-    padding: 13px 22px;
+    margin: 10px;
+    padding: 13px 24px;
     border-radius: 6px;
     text-decoration: none;
     font-weight: bold;
-    transition: 0.2s;
 }
 
 
+
 header a:first-of-type {
-    background-color: #00209F;
+    background: #00209F;
     color: white;
 }
 
 header a:first-of-type:hover {
-    background-color: #001675;
+    background: #001675;
 }
 
 
+
 header a:last-of-type {
-    background-color: #D21034;
+    background: #D21034;
     color: white;
 }
 
 header a:last-of-type:hover {
-    background-color: #a30c29;
+    background: #a30c29;
 }
+
 
 
 main {
     max-width: 1000px;
     margin: auto;
-    padding: 20px;
+    padding: 30px 20px;
 }
+
 
 
 section {
-    padding: 32px 0;
+    padding: 35px 0;
 }
-
-section header {
-    margin: 0 0 18px 0;
-}
-
 
 section h2 {
     text-align: center;
     font-size: 3rem;
-    color: white;
     margin-bottom: 10px;
+    color: #ffffff;
 }
+
 
 
 section h2::after {
@@ -127,10 +132,11 @@ section h2::after {
     display: block;
     width: 80px;
     height: 4px;
-    background-color: #D21034;
+    background: #D21034;
     margin: 10px auto 0 auto;
-    border-radius: 3px;
 }
+
+
 
 section p {
     max-width: 850px;
@@ -138,21 +144,21 @@ section p {
 }
 
 
+
 #services {
     display: flex;
-    gap: 20px;
     justify-content: center;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
 #services aside {
-    background-color: #3a3d42;
+    background: #3a3d42;
     border: 1px solid #555;
     border-radius: 8px;
-    width: 280px;
     padding: 22px;
+    width: 280px;
 }
-
 
 #services aside h3 {
     color: #F1B517;
@@ -160,8 +166,9 @@ section p {
 }
 
 
+
 form {
-    background-color: #3a3d42;
+    background: #3a3d42;
     border: 1px solid #555;
     border-radius: 8px;
     padding: 24px;
@@ -180,17 +187,14 @@ input {
     padding: 12px;
     margin-bottom: 16px;
     border-radius: 6px;
-    border: 1px solid #888;
+    border: 1px solid #777;
     box-sizing: border-box;
 }
 
-input:focus {
-    outline: 2px solid #00209F;
-}
 
 
 button {
-    background-color: #00209F;
+    background: #00209F;
     color: white;
     border: none;
     padding: 12px 22px;
@@ -200,13 +204,14 @@ button {
 }
 
 button:hover {
-    background-color: #001675;
+    background: #001675;
 }
+
 
 
 footer {
     text-align: center;
     padding: 20px;
+    background: #1f2124;
     margin-top: 30px;
-    background-color: #1f2124;
 }
