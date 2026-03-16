@@ -1,38 +1,73 @@
 body {
     background-color: #f7f7f7;
+    margin: 0;
 }
 
+/* Hero section */
 header {
     background-color: #d95c93;
     color: white;
     text-align: center;
-    padding: 50px 20px;
+    padding: 80px 20px;
 }
 
-header h1 {
-    font-size: 2.8rem;
-    margin-bottom: 10px;
-}
-
-header p {
-    max-width: 700px;
-    margin: 0 auto 20px auto;
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav ul {
+    display: flex;
     list-style: none;
+    gap: 20px;
+    padding: 0;
 }
 
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Headings */
+header h1 {
+    font-size: 3rem;
+    margin-top: 40px;
+}
+
+header p {
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Buttons */
+header a {
+    margin: 10px;
+}
+
+/* Sections */
+section {
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Services cards */
 #services {
     text-align: center;
 }
 
-aside {
-    background-color: white;
-    border: 1px solid #ddd;
+#services aside {
+    background: white;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 6px;
 }
 
+/* Footer */
 footer {
     text-align: center;
-    margin-top: 30px;
+    padding: 20px;
 }
