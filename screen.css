@@ -1,11 +1,14 @@
+/* Dark theme similar to MVP.css site */
+
 body {
-    background-color: #f7f7f7;
+    background-color: #2f3136;
+    color: #e6e6e6;
     margin: 0;
 }
 
 /* Hero section */
 header {
-    background-color: #d95c93;
+    background-color: #2f3136;
     color: white;
     text-align: center;
     padding: 80px 20px;
@@ -26,7 +29,7 @@ nav ul {
 }
 
 nav a {
-    color: white;
+    color: #4da3ff;
     text-decoration: none;
     font-weight: bold;
 }
@@ -44,7 +47,16 @@ header p {
 
 /* Buttons */
 header a {
+    display: inline-block;
     margin: 10px;
+    padding: 12px 20px;
+    border: 2px solid #4da3ff;
+    border-radius: 6px;
+}
+
+header a:hover {
+    background-color: #4da3ff;
+    color: white;
 }
 
 /* Sections */
@@ -54,13 +66,9 @@ section {
     margin: auto;
 }
 
-/* Services cards */
-#services {
-    text-align: center;
-}
-
+/* Service cards */
 #services aside {
-    background: white;
+    background: #3a3d42;
     padding: 20px;
     margin: 15px;
     border-radius: 6px;
@@ -70,4 +78,5 @@ section {
 footer {
     text-align: center;
     padding: 20px;
+    background: #1f2124;
 }
