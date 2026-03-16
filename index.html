@@ -1,19 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
+<head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title>Startup in Haiti</title>
+    <meta name="description" content="A splash page for a startup in Haiti">
+
+    <link rel="stylesheet" href="mvp.css">
     <link rel="stylesheet" href="screen.css">
-  </head>
-  <body>
-    <h1>Home</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </nav>
-    <script src="index.js"></script>
-  </body>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#"><strong>Ayiti Start</strong></a>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <h1>Helping startups grow in Haiti</h1>
+        <p>
+            Ayiti Start is a startup idea focused on helping Haitian businesses grow
+            through simple digital tools and online support.
+        </p>
+
+        <p>
+            <a href="#about"><b>Learn More</b></a>
+            <a href="#contact">Sign Up</a>
+        </p>
+    </header>
+
+    <main>
+        <section id="about">
+            <header>
+                <h2>About</h2>
+            </header>
+            <p>
+                This startup is meant to support small businesses in Haiti by giving them
+                a way to be seen online. The goal is to make it easier for local businesses
+                to connect with more customers and share their products or services.
+            </p>
+        </section>
+
+        <section id="services">
+            <header>
+                <h2>Services</h2>
+            </header>
+
+            <aside>
+                <h3>Business Promotion</h3>
+                <p>Help businesses create a stronger online presence.</p>
+            </aside>
+
+            <aside>
+                <h3>Simple Website Tools</h3>
+                <p>Offer basic website support for small businesses.</p>
+            </aside>
+
+            <aside>
+                <h3>Customer Connection</h3>
+                <p>Make it easier for people to learn about local businesses.</p>
+            </aside>
+        </section>
+
+        <section>
+            <header>
+                <h2>Why It Matters</h2>
+            </header>
+            <p>
+                Many small businesses have great ideas but may not have the resources
+                to build a strong online presence. This startup could help fill that gap.
+            </p>
+        </section>
+
+        <section id="contact">
+            <header>
+                <h2>Contact</h2>
+            </header>
+
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p><small>Created for CSS Frameworks Lab</small></p>
+    </footer>
+
+</body>
 </html>
