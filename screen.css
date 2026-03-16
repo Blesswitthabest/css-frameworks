@@ -1,7 +1,8 @@
 body {
     background-color: #2f3136;
-    color: #e6e6e6;
+    color: #f5f5f5;
     margin: 0;
+    line-height: 1.6;
 }
 
 
@@ -9,28 +10,35 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px 40px;
 }
 
 nav ul {
     display: flex;
     list-style: none;
     gap: 20px;
+    margin: 0;
+    padding: 0;
 }
 
 nav a {
-    color: #00209F; 
+    color: #f5f5f5;
     text-decoration: none;
     font-weight: bold;
+}
+
+nav a:hover {
+    color: #F1B517;
 }
 
 
 header {
     text-align: center;
-    padding: 70px 20px 40px 20px;
+    padding: 60px 20px 30px 20px;
 }
 
 header h1 {
-    font-size: 3rem;
+    font-size: 3.2rem;
     color: #ffffff;
     margin-bottom: 15px;
 }
@@ -38,32 +46,67 @@ header h1 {
 header p {
     max-width: 700px;
     margin: 0 auto 20px auto;
+    color: #e6e6e6;
+}
+
+
+header a {
+    display: inline-block;
+    margin: 10px 8px;
+    padding: 12px 20px;
+    border: 2px solid #00209F;
+    border-radius: 6px;
+    color: #ffffff;
+    background-color: #00209F;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover {
+    background-color: #D21034;
+    border-color: #D21034;
+    color: #ffffff;
+}
+
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 
 section {
-    padding: 35px 20px;
-    max-width: 1000px;
-    margin: auto;
+    padding: 32px 0;
 }
-
 
 section header {
     padding: 0;
-    margin: 0 0 15px 0;
+    margin: 0 0 18px 0;
 }
 
+
 section h2 {
-    color: #D21034; 
+    color: #ffffff;
     text-align: center;
     font-size: 3rem;
     margin: 0 0 10px 0;
 }
 
+section h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    margin: 10px auto 0;
+    background-color: #D21034;
+    border-radius: 2px;
+}
 
 section p {
-    margin-top: 0;
-    line-height: 1.6;
+    max-width: 850px;
+    margin: 0 auto;
+    color: #e6e6e6;
 }
 
 
@@ -72,43 +115,80 @@ section p {
     gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
+    text-align: left;
 }
 
 #services aside {
-    background: #3a3d42;
-    padding: 20px;
+    background-color: #3a3d42;
+    border: 1px solid #4b4f55;
     border-radius: 8px;
     width: 280px;
-    border: 1px solid #016A16; 
+    padding: 20px;
+    box-shadow: none;
 }
 
-aside h3 {
-    color: #F1B517; 
+#services aside h3 {
+    color: #F1B517;
     margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+#services aside p {
+    margin: 0;
+    color: #e6e6e6;
 }
 
 
-header a {
-    display: inline-block;
-    margin: 10px;
-    padding: 12px 20px;
-    border: 2px solid #00209F; 
-    border-radius: 6px;
-    color: #00209F;
-    text-decoration: none;
+form {
+    background-color: #3a3d42;
+    border: 1px solid #4b4f55;
+    border-radius: 8px;
+    padding: 24px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
     font-weight: bold;
-}
-
-header a:hover {
-    background-color: #00209F;
     color: #ffffff;
 }
 
-form {
-    background: #3a3d42;
-    padding: 20px;
-    border-radius: 8px;
-    border: 1px solid #016A16;
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #777;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    background-color: #ffffff;
+    color: #111111;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid #00209F;
+    border-color: #00209F;
+}
+
+
+button {
+    background-color: #00209F;
+    color: #ffffff;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #D21034;
 }
 
 
@@ -116,5 +196,6 @@ footer {
     text-align: center;
     padding: 20px;
     background: #1f2124;
-    color: white;
+    color: #ffffff;
+    margin-top: 30px;
 }
