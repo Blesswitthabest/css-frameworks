@@ -18,7 +18,7 @@ nav ul {
 }
 
 nav a {
-    color: #3da5ff;
+    color: #00209F; 
     text-decoration: none;
     font-weight: bold;
 }
@@ -26,32 +26,44 @@ nav a {
 
 header {
     text-align: center;
-    padding: 80px 20px;
+    padding: 70px 20px 40px 20px;
 }
-
 
 header h1 {
     font-size: 3rem;
     color: #ffffff;
+    margin-bottom: 15px;
 }
 
-
-section h2 {
-    color: #9b5cff;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-
-aside h3 {
-    color: #3da5ff;
+header p {
+    max-width: 700px;
+    margin: 0 auto 20px auto;
 }
 
 
 section {
-    padding: 50px 20px;
-    max-width: 900px;
+    padding: 35px 20px;
+    max-width: 1000px;
     margin: auto;
+}
+
+
+section header {
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+section h2 {
+    color: #D21034; 
+    text-align: center;
+    font-size: 3rem;
+    margin: 0 0 10px 0;
+}
+
+
+section p {
+    margin-top: 0;
+    line-height: 1.6;
 }
 
 
@@ -59,13 +71,20 @@ section {
     display: flex;
     gap: 20px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 #services aside {
     background: #3a3d42;
     padding: 20px;
     border-radius: 8px;
-    width: 250px;
+    width: 280px;
+    border: 1px solid #016A16; 
+}
+
+aside h3 {
+    color: #F1B517; 
+    margin-top: 0;
 }
 
 
@@ -73,14 +92,23 @@ header a {
     display: inline-block;
     margin: 10px;
     padding: 12px 20px;
-    border: 2px solid #3da5ff;
+    border: 2px solid #00209F; 
     border-radius: 6px;
-    color: #3da5ff;
+    color: #00209F;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 header a:hover {
-    background-color: #3da5ff;
-    color: white;
+    background-color: #00209F;
+    color: #ffffff;
+}
+
+form {
+    background: #3a3d42;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #016A16;
 }
 
 
@@ -88,4 +116,5 @@ footer {
     text-align: center;
     padding: 20px;
     background: #1f2124;
+    color: white;
 }
