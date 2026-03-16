@@ -1,20 +1,10 @@
-/* Dark theme similar to MVP.css site */
-
 body {
     background-color: #2f3136;
     color: #e6e6e6;
     margin: 0;
 }
 
-/* Hero section */
-header {
-    background-color: #2f3136;
-    color: white;
-    text-align: center;
-    padding: 80px 20px;
-}
 
-/* Navigation */
 nav {
     display: flex;
     justify-content: space-between;
@@ -25,56 +15,75 @@ nav ul {
     display: flex;
     list-style: none;
     gap: 20px;
-    padding: 0;
 }
 
 nav a {
-    color: #4da3ff;
+    color: #3da5ff;
     text-decoration: none;
     font-weight: bold;
 }
 
-/* Headings */
+
+header {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+
 header h1 {
     font-size: 3rem;
-    margin-top: 40px;
+    color: #ffffff;
 }
 
-header p {
-    max-width: 600px;
-    margin: auto;
+
+section h2 {
+    color: #9b5cff;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-/* Buttons */
-header a {
-    display: inline-block;
-    margin: 10px;
-    padding: 12px 20px;
-    border: 2px solid #4da3ff;
-    border-radius: 6px;
+
+aside h3 {
+    color: #3da5ff;
 }
 
-header a:hover {
-    background-color: #4da3ff;
-    color: white;
-}
 
-/* Sections */
 section {
     padding: 50px 20px;
     max-width: 900px;
     margin: auto;
 }
 
-/* Service cards */
+
+#services {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
 #services aside {
     background: #3a3d42;
     padding: 20px;
-    margin: 15px;
-    border-radius: 6px;
+    border-radius: 8px;
+    width: 250px;
 }
 
-/* Footer */
+
+header a {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 20px;
+    border: 2px solid #3da5ff;
+    border-radius: 6px;
+    color: #3da5ff;
+}
+
+header a:hover {
+    background-color: #3da5ff;
+    color: white;
+}
+
+
 footer {
     text-align: center;
     padding: 20px;
